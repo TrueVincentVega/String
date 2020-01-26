@@ -2,6 +2,10 @@
 
 //#define CONSTRUCTORS_CHECK
 
+//	Class declaration //Объявление класса
+class String;
+String operator+(const String& left, const String& right);
+
 class String
 {
 	unsigned int size;	//Размер строки в Байтах.
@@ -103,7 +107,9 @@ public:
 		return i;
 	}
 };
+////////////////////////////////////////////////////////////////
 
+//		Class deffinition // Определение класса ////////////////////////////
 String operator+(const String& left, const String& right)
 {
 	String result(left.get_size() + right.get_size() - 1);
@@ -119,6 +125,7 @@ std::ostream& operator<<(std::ostream& os, const String& obj)
 {
 	return os << obj.get_str();
 }
+/////////////////////////////////////////////////////////////////////
 
 void main()
 {
