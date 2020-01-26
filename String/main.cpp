@@ -149,5 +149,4 @@ void main()
 	//std::cout << str3 << std::endl;
 }
 
-
 //MoveConstructor/MoveAssignment
